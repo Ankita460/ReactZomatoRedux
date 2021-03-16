@@ -153,6 +153,7 @@ const styles=StyleSheet.create({
     marginVertical: 20,
     marginHorizontal: 30,
     fontFamily:fontFamily.openSensLight,
-
+    fontSize:25,
+    
   }
 })
