@@ -5,6 +5,9 @@ import colors from '../../styles/colors';
 import validator from '../../utils/validation';
 import { showMessage, hideMessage } from "react-native-flash-message";
 import apis from '../../apis';
+import fontFamily from '../../styles/fontFamily';
+
+
 
 export default class Login extends Component {
     constructor(props) {
@@ -148,6 +151,8 @@ const styles=StyleSheet.create({
   },
   account:{
     marginVertical: 20,
-    marginHorizontal: 30
+    marginHorizontal: 30,
+    fontFamily:fontFamily.openSensLight,
+
   }
 })
