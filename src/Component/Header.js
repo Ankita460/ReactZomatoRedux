@@ -27,7 +27,7 @@ const styles=StyleSheet.create({
             },
             Signup:{
                 marginHorizontal: 130,
-                marginVertical: -30,
+                marginVertical: -35,
                 fontWeight: 'bold',
                 fontSize: 25
             },

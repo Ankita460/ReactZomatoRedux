@@ -1,6 +1,6 @@
 export default {
     themeMain: '#e2e2e2',
-    textTerms: 'skyblue',
+    textTerms: '#FF1493',
     textField: 'white',
     textBorder: 'lightgrey',
     

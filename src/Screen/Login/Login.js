@@ -83,7 +83,9 @@ render(){
     let {navigation, isloading} = this.props;
 
     return(
-        <View>
+        <View style={
+          {flex: 1, justifyContent: 'center', alignItems: 'center'}
+        }>
             <Text style={styles.login}>Login</Text>
             <View style={styles.email}>
             <TextInput placeholder="Email" onChangeText
@@ -124,7 +126,8 @@ const styles=StyleSheet.create({
     textAlign: 'center',
     marginVertical: 20,
     fontWeight: 'bold',
-    fontSize: 25
+    fontSize: 25,
+    
   },
   email:{
     borderWidth: 1,
