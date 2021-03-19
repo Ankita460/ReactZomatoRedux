@@ -11,10 +11,10 @@ export default function AuthStack() {
      
       <Stack.Screen name={navigationString.LOGIN} component={Login} />
       <Stack.Screen name={navigationString.SIGNUP} component={Signup} />
-      {/* <Stack.Screen  name={navigationString.MAIN_PAGE} component={TabRoutes} /> */}
-      <Stack.Screen name={navigationString.ORDER_DETAIL} component={OrderDetail} />
+      {/* <Stack.Screen options={{headerShown:false}} name={navigationString.MAIN_PAGE} component={TabRoutes} /> */}
+      <Stack.Screen  name={navigationString.ORDER_DETAIL} component={OrderDetail} />
       <Stack.Screen  name={navigationString.FINAL_ORDER} component={FinalOrder} />
-      <Stack.Screen name={navigationString.ORDER_TRACK} component={OrderTrack} />
+      <Stack.Screen  name={navigationString.ORDER_TRACK} component={OrderTrack} />
 
     </React.Fragment>
   );

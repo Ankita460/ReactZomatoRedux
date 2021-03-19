@@ -9,6 +9,7 @@ export default{
     ORDER_DETAIL: 'OrderDetail',
     FINAL_ORDER: 'FinalOrder',
     ORDER_TRACK: 'OrderTrack',
+    LATEST_DETAIL: 'latestDetail'
 
     
 }

@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, FlatList,Linking,Share
 import { ScrollView } from "react-native-gesture-handler"
 import BtnComponent from "../../Component/BtnCompoment"
 import Order from "../../Component/Order"
-import navigationStrings from "../../constants/navigationStrings"
+import navigationString from "../../constants/navigationStrings"
 import imagePath from "../../constants/imagePath"
 import OrderDetail from "../OrderDetail/OrderDetail"
 
@@ -129,7 +129,7 @@ export default class LatestDeals extends Component{
      const {navigation}=this.props
      const {orderArray, addToCart, clicks}=this.state
      let newArray=[...orderArray]
-     navigation.navigate(navigationStrings.FINAL_ORDER, {addToCart: addToCart, clicks: clicks})
+     navigation.navigate(navigationString.FINAL_ORDER, {addToCart: addToCart, clicks: clicks})
  }
 
  _onNextScreen=(id)=>{
@@ -137,7 +137,7 @@ export default class LatestDeals extends Component{
     const{navigation}=this.props
     const {orderArray}=this.state
     let newArray=[...orderArray]
-    navigation.navigate(navigationStrings.ORDER_DETAIL, {selectItem: newArray[id]});
+    navigation.navigate(navigationString.ORDER_DETAIL, {selectItem: newArray[id]});
 }
 IncrementItem = (id) => {
 

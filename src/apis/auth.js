@@ -17,6 +17,6 @@ export function login(data = {}) {
 export function Signup(data = {}) {
   return apiPost(SIGNUP, data);
 }
-//  export function UploadFile(data={}){
-//    return apiPost(UPLOADFILE, data);
-//  } 
+ export function UploadFile(data={}){
+   return apiPost(UPLOADFILE, data);
+ } 

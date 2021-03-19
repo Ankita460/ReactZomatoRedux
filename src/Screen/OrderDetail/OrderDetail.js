@@ -25,7 +25,7 @@ _addToCart=(selectItem)=>{
         console.log(addToCart)
         this.setState({addToCart:{...selectItem}})
         this.setState({itemCount: itemCount + 1})
-        navigation.navigate("Latest Deals", {itemCount: itemCount, addToCart: addToCart})
+        navigation.navigate("Latest Details", {itemCount: itemCount, addToCart: addToCart})
     }
 }
 render() {

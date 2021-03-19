@@ -40,7 +40,7 @@ export default class Login extends Component {
                       icon:"success",
                       message: "Successfully Registered!"
                   });
-                  navigation.navigate(navigationStrings.HOMEPAGE);
+                  navigation.navigate(navigationStrings.TAB_ROUTES);
 
           })
           .catch((error)=>{

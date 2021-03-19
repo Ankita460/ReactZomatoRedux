@@ -31,12 +31,12 @@ function TabRoutes({navigation}) {
       }}
       />
       <Tab.Screen name="Latest Deals" component={LatestDeals} 
-      options={{
+    //   options={{
         // tabBarLabel: "Browse",
         // tabBarIcon: ({ color,focused }) => (
         //   <Icon name="collage" color={focused?'#eb3899':'gray'} size={26} />
         // ),
-      }}
+    //   }}
       />
       <Tab.Screen name="Cart" component={Cart} 
       options={{
