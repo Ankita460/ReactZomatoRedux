@@ -40,7 +40,7 @@ export default class Login extends Component {
                       icon:"success",
                       message: "Successfully Registered!"
                   });
-                  navigation.navigate(navigationStrings.TAB_ROUTES);
+                  navigation.navigate(navigationStrings.HOMEPAGE);
 
           })
           .catch((error)=>{
@@ -83,9 +83,7 @@ render(){
     let {navigation, isloading} = this.props;
 
     return(
-        <View style={
-          {flex: 1, justifyContent: 'center', alignItems: 'center'}
-        }>
+        <View>
             <Text style={styles.login}>Login</Text>
             <View style={styles.email}>
             <TextInput placeholder="Email" onChangeText
@@ -126,8 +124,7 @@ const styles=StyleSheet.create({
     textAlign: 'center',
     marginVertical: 20,
     fontWeight: 'bold',
-    fontSize: 25,
-    
+    fontSize: 25
   },
   email:{
     borderWidth: 1,
