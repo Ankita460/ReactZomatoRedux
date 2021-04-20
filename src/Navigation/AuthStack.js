@@ -1,17 +1,25 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {Signup, Login} from '../Screen';
-import navigationString from '../constants/navigationStrings';
-import HomePage from '../Screen/HomePage/HomePage';
+import { Button, View } from 'react-native';
+// import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import navigationStrings from '../constants/navigationStrings';
+import { Login, VerificationSceen} from '../Screen/index';
+
 const Stack = createStackNavigator();
 
-export default function AuthStack() {
+function AuthStack() {
   return (
     <React.Fragment>
-     
-      <Stack.Screen name={navigationString.LOGIN} component={Login} />
-      <Stack.Screen name={navigationString.SIGNUP} component={Signup} />
+       
+       
+      <Stack.Screen options={{ headerShown: false }} name={navigationStrings.LOGIN} component={Login} />
+      <Stack.Screen options={{ headerShown: false }} name={navigationStrings.VERIFICATION_SCREEN} component={VerificationSceen} />
+
+      
+
 
     </React.Fragment>
   );
 }
+
+export default AuthStack;

@@ -1,36 +1,30 @@
-import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
-import imagePath from '../constants/imagePath';
-import signup from '../Screen/Signup/Signup';
-function Header() {
-    return(
-<View>
-            <TouchableOpacity onPress={() => navigation.goBack()} >
-<View style={styles.container}>
-    <Image source={imagePath.back} style={styles.back}/>
-    </View>
-            </TouchableOpacity>
-            <Text style={styles.Signup}>Sign Up</Text>
-            </View>
-    )
-    
-}
+import React from 'react'
+import { View, Text , Image , StyleSheet, TouchableOpacity} from 'react-native'
+import imagePath from '../constants/imagePath'
 
-const styles=StyleSheet.create({
-    container:{
-        height: 40,
-        marginHorizontal: 25
-            },
-            back:{
-                width: 35,
-                height: 35
-            },
-            Signup:{
-                marginHorizontal: 130,
-                marginVertical: -30,
-                fontWeight: 'bold',
-                fontSize: 25
-            },
+
+export default function Header({textData , onBack}) {
+    
+    return (
+        <View style={{flexDirection:'row'}}>
+            <TouchableOpacity onPress={()=>onBack()}>
+            <Image source={imagePath.backIcon} style={styles.backIcon} 
+            />
+            </TouchableOpacity>
+                <Text style={styles.textData}>{textData}</Text>
+        </View>
+    )
+}
+const styles = StyleSheet.create({
+    backIcon:{
+        width:30,
+        height:30,
+        marginVertical:8,
+        marginHorizontal:15
+    },
+    textData:{
+        marginVertical:5,
+        fontSize:25
+    }
 })
 
-export default Header;
